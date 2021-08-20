@@ -4,13 +4,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/contato.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/produtos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital@1&display=swap" rel="stylesheet">
   <title>CONTATO DO SALÃO</title>
 </head>
 <body>
   <header>
     <div class="caixa">
   
-  <h1><img src="img/baixados.jpg"></h1>
+  <h1><img class="imagem" src="img/baixados.jpg"></h1>
   
   <nav>
     <ul>
@@ -20,8 +26,8 @@
     
     </ul>
     </nav>
-    <section>
-     
+  </section>
+</header>
 
     <h1>CONTATO !!!</h1>
 
@@ -46,15 +52,44 @@
 <p>Nosso salão abre a partir das 9Hrs da manhã fechando ao meio dia e voltando ao funcionamento apartir as 13Hrs e vai  até as 17Hrs, mas vc pode optar  por entrar em contato com nosco atraves do nosso numero  de contato do Whatsap:   </p>
 
 
-  <h1> NUMERO DO WHATSAPP <a href="http://wa.me/5555981317837" target="_blank">Salao de Belesa da Jesyane</a></h1>
+  <h1> ENTRE EM CONTATO COM NOSCO ATRAVES DAS NOSSAS REDES SOCIAIS !!!</h1>
   </section>
     </div>
 
-    <img class="banner" src="img/baixados.jpg" alt="" />
+
+    <main class="principal">
+      <form action="">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome"  class="input-padrao" required>
+  
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" class="input-padrao"
+        placeholder="seuemail@dominio.com" required>
+  
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone" class="input-padrao"
+        placeholder="(xx) xxxxx-xxxxx" required>
+  
+        <label for="mensagem">Mensagem</label>
+        <textarea name="" id="mensagem" class="input-padrao" cols="71" rows="10"></textarea>
+  
+        <fieldset>
+          <legend>Como prefere o nosso contato?</legend>
+          <label for="radio-email">
+          <input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
+  
+          <label for="radio-telefone">
+          <input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+  
+          <label for="radio-whatsapp">
+          <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+      </fieldset>
+  
+      <input type="submit" class="enviar" value="Enviar Forulario">
 
 
 
-
+   <div class="roda-pe"><img class="banner" src="img/baixados.jpg" alt="" /></div>
 
     <html lang=“pt-br”>
 	<head>
@@ -64,15 +99,11 @@
 			body{
 				border: dashed 5px #000;
 			}
-			header{
-				border: solid 20px rgb(255, 0, 242);
-			}
+      border: solid 20px rgb(255, 0, 242);
 			div{
 				border: solid 20px rgb(0, 0, 0);
 			}
-			p{
-				border: dotted 5px #0A0;
-			}
+		
 		</style>
 
   </header>
